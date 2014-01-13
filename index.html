@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style>
+		.container{
+			margin: 200px auto;
+			width: 300px;
+			overflow: hidden;
+			padding: 1px; /*make the Sudoku border visiable*/
+		}
+		.box{
+			width: 33.3333%;
+			box-sizing: border-box;
+			height: 100px;
+			float: left;
+			border: 1px solid #ccc;
+			margin-top: -1px;	 /*make the Sudoku border only 1px viewed*/
+			margin-left: -1px; /*make the Sudoku border only 1px viewed*/
+			position: relative;
+		}
+		.box:hover{
+			z-index: 999999; /*make the hover box above all the other boxes*/
+			border: 1px solid red; 
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+</body>
+</html>
